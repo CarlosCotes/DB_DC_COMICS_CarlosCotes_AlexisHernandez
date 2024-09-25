@@ -4,7 +4,7 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#descripción-) |
-| 2. | [Entidades_y_Relaciones](#funcionalidades-) |
+| 2. | [Entidades_y_Relaciones](#entidaddes_y_relaciones-) |
 | 3. | [Tecnologías](#tecnologías-%EF%B8%8F) |
 | 4. | [USO](#uso-) |
 | 5. | [Contribución](#contribución-) |
