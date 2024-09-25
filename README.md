@@ -4,11 +4,13 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#descripción-) |
-| 2. | [Entidades_y_Relaciones](#entidaddes_y_relaciones-) |
-| 3. | [Tecnologías](#tecnologías-%EF%B8%8F) |
-| 4. | [USO](#uso-) |
-| 5. | [Contribución](#contribución-) |
-| 6. | [Contacto](#contacto-) |
+| 2. | [Diagrama_E-R](#entidaddes_y_relaciones-) |
+| 3. | [Entidades_y_Relaciones](#entidaddes_y_relaciones-) |
+| 4. | [Consultas](#entidaddes_y_relaciones-) |
+| 5. | [Tecnologías](#tecnologías-%EF%B8%8F) |
+| 6. | [USO](#uso-) |
+| 7. | [Contribución](#contribución-) |
+| 8. | [Contacto](#contacto-) |
 
 ## Descripción 💻
 
@@ -16,12 +18,27 @@ Este proyecto consiste en la creación y gestión de una base de datos relaciona
 
 ## Entidaddes_y_Relaciones 🌐
 
-- **Login:** Permite ingresar de manera óptima al aplicativo web. De igual manera, es interactiva y los usuarios necesitarán cumplir con las condidiones adecuadas para poder completar el ingreso de manera correcta.
-- **Sistema CRUD:** Mediante este sistema los usuarios podrán crear, leer, actualizar (editar) y eliminar los múltiples registros de recursos (películas, series o libros) que se realizaron.
-- **Filtro y Búsqueda:** Este aplicativo cuenta con un sistema de filtrado para que los usuarios puedan visualizar el contenido que deseen, mediante el estado, formato, y plataforma del recurso. Además, cuenta con una barra de búsqueda con la cual se puede escribir directamente el nombre del recurso que desee.
-- **Interfaz de Usuario:** Esta aplicación web posee un diseño amigable, estético y responsive, lo cual genera una agradable interración por parte del usuario y un fácil uso. También, con la implementación del responsive, se permite la visualización del proyecto por otro tipo de dispositivos y resoluciones.
-- **Persistencia de Datos:** Se posee un excelente sistema de persistencia de datos, mediante **LocalStorage**, para guardar los datos del usuario de manera que, al cerrar y reabrir la aplicación, los datos no se pierdan.
+*Breve explicación de entidades y la relación entre cada una de ellas:*
 
+Personajes 🥷: Cada personaje de DC Comics tiene un ID único, además de atributos como nombre, alias, primera aparición y tipo (héroe o villano).
+
+Escritores 📝: Cada escritor tiene un ID único, nombre, apellido, nacionalidad y fecha de nacimiento.
+
+Poderes ✴️: Cada poder tiene un ID único. Los poderes son habilidades especiales, como fuerza sobrehumana o telepatía.
+
+Asociaciones 🦸🦹: Cada asociación tiene un ID único. Representa equipos o grupos de personajes, como la Liga de la Justicia o los Jóvenes Titanes.
+
+Ciudad 🌃: Cada ciudad tiene un ID único. Representa las ciudades donde los personajes residen o actúan, como Gotham o Metrópolis.
+ 
+Cómics 📖: Cada cómic tiene una ID único y es una publicación individual que puede pertenecer a una serie de cómics.
+
+Series Cómics 📚: Cada serie de cómics tiene un ID único. Son colecciones de cómics que siguen una misma historia o arco narrativo.
+
+Eventos 🌁: Cada evento tiene un ID único. Son arcos argumentales que afectan a varios personajes y cómics, como Crisis en Tierras Infinitas.
+
+Apariciones Cómics 📜: Cada aparición en cómic tiene un ID único. Guarda las apariciones de personajes en cómics.
+
+Universos 🗺️: Cada universo presenta un ID único y además posee atributos como nombre, descripción, tipo de universo y fecha de creación. representa los distintos universos o realidades alternativas del multiverso DC, como Tierra-1 o Tierra-2.
 
 ## Tecnologías 🖥️
 
@@ -34,7 +51,7 @@ Este proyecto consiste en la creación y gestión de una base de datos relaciona
 > ## USO 🔧
 
 - **Clona este repositorio:**
-[https://github.com/AlexisH28/Proyecto_JavaScript_Hernandez_Alexis]
+https://github.com/CarlosCotes/DB_DC_COMICS_CarlosCotes_AlexisHernandez.git
 
 - **Crea la base de datos en MySQL.**
 `(CREATE DATABASE dc_comics;)`
