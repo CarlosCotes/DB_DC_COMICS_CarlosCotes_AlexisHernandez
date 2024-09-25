@@ -1,4 +1,4 @@
-# 📖 DB DC CÓMICS 📖
+# 📖🥷 DB DC CÓMICS 📖🥷
 
 ## Tabla de Contenido 📋
 | Indice | Título  |
@@ -34,9 +34,22 @@ Este proyecto consiste en la creación y gestión de una base de datos relaciona
 > ## USO 🔧
 
 - **Clona este repositorio:**
-https://github.com/AlexisH28/Proyecto_JavaScript_Hernandez_Alexis
+[https://github.com/AlexisH28/Proyecto_JavaScript_Hernandez_Alexis]
+
+- **Crea la base de datos en MySQL.**
+`(CREATE DATABASE dc_comics;)`
+
+- **Luego selecciona esta base de datos como la predeterminada.**
+`(USE dc_comics;)`
    
-- **Abre (index.html) en tu editor de código con la extensión "Live Server"**.
+- **Importa el archivo SQL proporcionado para generar las tablas y datos iniciales.**.
+- En el menú principal, selecciona File > Open SQL Script.
+- Navega a la ubicación donde tienes el archivo `(dc_comics_database.sql)` y selecciónalo.
+- Se abrirá el contenido del archivo en un editor de texto dentro de MySQL Workbench.
+
+- **Ejecuta el script.**
+- Para ejecutar el archivo SQL, haz clic en el botón de "rayo" (⚡) que se encuentra en la parte superior izquierda del editor o presiona `(Ctrl + Enter (Windows))` / `(Cmd + Enter (Mac))`.
+- Esto creará las tablas y cargará los datos necesarios en la base de datos.
 
 > [!TIP]
 > ## Contribución 👥
