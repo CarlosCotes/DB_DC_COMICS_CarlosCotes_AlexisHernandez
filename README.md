@@ -21,7 +21,7 @@ Este proyecto consiste en la creación y gestión de una base de datos relaciona
 
 ## Entidades_y_Relaciones 🌐
 
-*Breve explicación de entidades y la relación entre cada una de ellas:*
+***Breve explicación de entidades y la relación entre cada una de ellas:***
 
 Personajes 🥷: Cada personaje de DC Comics tiene un ID único, además de atributos como nombre, alias, primera aparición y tipo (héroe o villano).
 
