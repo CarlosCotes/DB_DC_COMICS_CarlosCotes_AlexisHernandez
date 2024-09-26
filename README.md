@@ -1,7 +1,4 @@
-# 📖🥷 DB DC CÓMICS 📖🥷
-
-![Texto alternativo](https://i.makeagif.com/media/7-29-2016/VLYJZP.gif)
-
+# ☢️ BD TOXIC ZONE ☢️
 
 ## Tabla de Contenido 📋
 | Indice | Título  |
@@ -17,7 +14,7 @@
 
 ## Descripción 💻
 
-Este proyecto consiste en la creación y gestión de una base de datos relacional utilizando MySQL, basada en el vasto universo de DC Comics. El objetivo principal es almacenar y organizar información sobre personajes, cómics, villanos, héroes y arcos narrativos de DC Comics, permitiendo consultas detalladas sobre estos elementos.
+Este proyecto consiste en la creación y gestión de una base de datos relacional utilizando MySQL, 
 
 ## Entidades_y_Relaciones 🌐
 
