@@ -6,7 +6,7 @@
 | 1. | [Descripción](#descripción-) |
 | 2. | [Diagrama_E-R]() |
 | 3. | [Entidades_y_Relaciones](#entidades_y_relaciones-) |
-| 4. | [Consultas](#entidaddes_y_relaciones-) |
+| 4. | [Consultas]() |
 | 5. | [Tecnologías](#tecnologías-%EF%B8%8F) |
 | 6. | [USO](#uso-) |
 | 7. | [Contribución](#contribución-) |
@@ -14,7 +14,7 @@
 
 ## Descripción 💻
 
-Este proyecto consiste en la creación y gestión de una base de datos relacional utilizando MySQL, 
+Toxic Zone es una base de datos MySQL diseñada para gestionar y organizar el inventario, las ventas y los datos de los clientes de una tienda de componentes electrónicos. Este proyecto ofrece una solución bien estructurada y escalable para manejar diversos aspectos de la operación de una tienda minorista, como el seguimiento de la disponibilidad de productos, la gestión de información de clientes y el procesamiento de pedidos.  
 
 ## Entidades_y_Relaciones 🌐
 
@@ -42,6 +42,7 @@ Universos 🗺️: Cada universo presenta un ID único y además posee atributos
 
 ### Relaciones:
 
+## Consultas 📑
 
 ## Tecnologías 🖥️
 
@@ -54,20 +55,25 @@ Universos 🗺️: Cada universo presenta un ID único y además posee atributos
 > ## USO 🔧
 
 - **Clona este repositorio:**
+https://github.com/CarlosCotes/DB_ToxicZone_CarlosCotes_AlexisHernandez.git
+
+- **Navega al directorio del proyecto:**
+`(cd DB_ToxicZone_CarlosCotes_AlexisHernandez)`
 
 - **Crea la base de datos en MySQL.**
-`(CREATE DATABASE dc_comics;)`
+`(CREATE DATABASE toxic_zone_db;)`
 
 - **Luego selecciona esta base de datos como la predeterminada.**
-`(USE dc_comics;)`
+`(USE toxic_zone_db;)`
    
 - **Importa el archivo SQL proporcionado para generar las tablas y datos iniciales.**.
-- En el menú principal, selecciona File > Open SQL Script.
-- Navega a la ubicación donde tienes el archivo `(dc_comics_database.sql)` y selecciónalo.
-- Se abrirá el contenido del archivo en un editor de texto dentro de MySQL Workbench.
+- Abre MySQL Workbench (si no lo has hecho ya).
+- En el menú principal, selecciona la opción File > Open SQL Script.
+- Navega a la ubicación donde se encuentra el archivo `((toxic_zone.sql))` y selecciónalo.
+- Esto abrirá el contenido del archivo en el editor de texto dentro de MySQL Workbench.
 
 - **Ejecuta el script.**
-- Para ejecutar el archivo SQL, haz clic en el botón de "rayo" (⚡) que se encuentra en la parte superior izquierda del editor o presiona `(Ctrl + Enter (Windows))` / `(Cmd + Enter (Mac))`.
+- Para ejecutar el archivo SQL, haz clic en el botón de "rayo" (⚡) que se encuentra en la parte superior izquierda del editor o presiona `(Ctrl + Enter (Windows))` / `(Cmd + Enter (MacOS))`.
 - Esto creará las tablas y cargará los datos necesarios en la base de datos.
 
 > [!TIP]
