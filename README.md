@@ -54,7 +54,6 @@ Universos 🗺️: Cada universo presenta un ID único y además posee atributos
 > ## USO 🔧
 
 - **Clona este repositorio:**
-https://github.com/CarlosCotes/DB_DC_COMICS_CarlosCotes_AlexisHernandez.git
 
 - **Crea la base de datos en MySQL.**
 `(CREATE DATABASE dc_comics;)`
