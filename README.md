@@ -1,4 +1,4 @@
-# ☢️ BD TOXIC ZONE ☢️
+# ☢️ DB TOXIC ZONE ☢️
 
 ## Tabla de Contenido 📋
 | Indice | Título  |
