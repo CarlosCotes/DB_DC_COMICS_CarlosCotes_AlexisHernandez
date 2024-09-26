@@ -7,8 +7,8 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#descripción-) |
-| 2. | [Diagrama_E-R](#entidaddes_y_relaciones-) |
-| 3. | [Entidades_y_Relaciones](#entidaddes_y_relaciones-) |
+| 2. | [Diagrama_E-R]() |
+| 3. | [Entidades_y_Relaciones](#entidades_y_relaciones-) |
 | 4. | [Consultas](#entidaddes_y_relaciones-) |
 | 5. | [Tecnologías](#tecnologías-%EF%B8%8F) |
 | 6. | [USO](#uso-) |
