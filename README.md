@@ -16,7 +16,7 @@
 
 Este proyecto consiste en la creación y gestión de una base de datos relacional utilizando MySQL, basada en el vasto universo de DC Comics. El objetivo principal es almacenar y organizar información sobre personajes, cómics, villanos, héroes y arcos narrativos de DC Comics, permitiendo consultas detalladas sobre estos elementos.
 
-## Entidaddes_y_Relaciones 🌐
+## Entidades_y_Relaciones 🌐
 
 *Breve explicación de entidades y la relación entre cada una de ellas:*
 
@@ -32,13 +32,16 @@ Ciudad 🌃: Cada ciudad tiene un ID único. Representa las ciudades donde los p
  
 Cómics 📖: Cada cómic tiene una ID único y es una publicación individual que puede pertenecer a una serie de cómics.
 
-Series Cómics 📚: Cada serie de cómics tiene un ID único. Son colecciones de cómics que siguen una misma historia o arco narrativo.
+Vehículos : Cada serie de cómics tiene un ID único. Son colecciones de cómics que siguen una misma historia o arco narrativo.
 
 Eventos 🌁: Cada evento tiene un ID único. Son arcos argumentales que afectan a varios personajes y cómics, como Crisis en Tierras Infinitas.
 
 Apariciones Cómics 📜: Cada aparición en cómic tiene un ID único. Guarda las apariciones de personajes en cómics.
 
 Universos 🗺️: Cada universo presenta un ID único y además posee atributos como nombre, descripción, tipo de universo y fecha de creación. representa los distintos universos o realidades alternativas del multiverso DC, como Tierra-1 o Tierra-2.
+
+### Relaciones:
+
 
 ## Tecnologías 🖥️
 
