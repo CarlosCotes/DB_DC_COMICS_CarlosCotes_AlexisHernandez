@@ -35,7 +35,7 @@ Ciudad 🌃: Cada ciudad tiene un ID único. Representa las ciudades donde los p
  
 Cómics 📖: Cada cómic tiene una ID único y es una publicación individual que puede pertenecer a una serie de cómics.
 
-Vehículos : Cada serie de cómics tiene un ID único. Son colecciones de cómics que siguen una misma historia o arco narrativo.
+Vehículos : Cada vehículo tiene un ID único y representa los vehículos utilizados por los personajes, como el Batimóvil o la nave de Superman.
 
 Eventos 🌁: Cada evento tiene un ID único. Son arcos argumentales que afectan a varios personajes y cómics, como Crisis en Tierras Infinitas.
 
