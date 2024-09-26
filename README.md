@@ -20,25 +20,29 @@ Toxic Zone es una base de datos MySQL diseñada para gestionar y organizar el in
 
 ***Breve explicación de entidades y la relación entre cada una de ellas:***
 
-Personajes 🥷: Cada personaje de DC Comics tiene un ID único, además de atributos como nombre, alias, primera aparición y tipo (héroe o villano).
+**Tienda 🥷:** Cada tienda tiene un ID_Tienda único que la identifica. Además, se guardan datos como el nombre, ubicación, teléfono, email y los horarios de apertura y cierre (Horario_Apertura, Horario_Cierre).
 
-Escritores 📝: Cada escritor tiene un ID único, nombre, apellido, nacionalidad y fecha de nacimiento.
+**Producto 📝:** Cada producto tiene un ID_Producto único. Además, se guardan el nombre, descripción, el precio y una Fecha_Añadido para conocer cuándo fue registrado en el sistema.
 
-Poderes ✴️: Cada poder tiene un ID único. Los poderes son habilidades especiales, como fuerza sobrehumana o telepatía.
+**Categoría ✴️:** Cada categoría tiene un ID_Categoría único. Esta entidad permite organizar los productos de manera que sea más fácil buscarlos y clasificarlos.
 
-Asociaciones 🦸🦹: Cada asociación tiene un ID único. Representa equipos o grupos de personajes, como la Liga de la Justicia o los Jóvenes Titanes.
+**Proveedor 🦸🦹:** El Proveedor es la entidad que representa a las empresas o personas que suministran los productos a la tienda. Cada proveedor tiene un ID_Proveedor único, y la entidad almacena datos importantes como el nombre, teléfono, email y dirección.
 
-Ciudad 🌃: Cada ciudad tiene un ID único. Representa las ciudades donde los personajes residen o actúan, como Gotham o Metrópolis.
+**Personal 🌃:** La entidad Personal contiene información de los empleados que trabajan en una tienda. Cada miembro del personal tiene un ID_Personal único. Se almacenan datos personales como el nombre, apellido, teléfono, email, el cargo que ocupa, y la Fecha_Ingreso. 
  
-Cómics 📖: Cada cómic tiene una ID único y es una publicación individual que puede pertenecer a una serie de cómics.
+**Cliente 📖:** La entidad Cliente almacena la información de las personas que compran en la tienda. Cada cliente tiene un ID_Cliente único, y se guarda información personal como nombre, apellido, teléfono, email y dirección.
 
-Vehículos : Cada vehículo tiene un ID único y representa los vehículos utilizados por los personajes, como el Batimóvil o la nave de Superman.
+**Venta :** La entidad Venta registra cada transacción que ocurre en la tienda. Cada venta tiene un ID_Venta único. Además, se registra la tienda en la que ocurrió la venta (ID_Tienda), el cliente que la realizó (ID_Cliente), y el empleado que gestionó la venta (ID_Personal). Se guarda la Fecha_Venta y el Total de la venta.
 
-Eventos 🌁: Cada evento tiene un ID único. Son arcos argumentales que afectan a varios personajes y cómics, como Crisis en Tierras Infinitas.
+**Detalle_Venta 🌁:** La entidad Detalle_Venta desglosa los productos vendidos en cada venta. Cada detalle tiene un ID_Detalle_Venta único y está relacionado con una venta específica (ID_Venta) y un producto específico (ID_Producto).
 
-Apariciones Cómics 📜: Cada aparición en cómic tiene un ID único. Guarda las apariciones de personajes en cómics.
+**Inventario 📜:** La entidad Inventario almacena la cantidad disponible de cada producto en cada tienda. Cada registro en inventario tiene un ID_Inventario único, y está relacionado tanto con una tienda (ID_Tienda) como con un producto específico (ID_Producto).
 
-Universos 🗺️: Cada universo presenta un ID único y además posee atributos como nombre, descripción, tipo de universo y fecha de creación. representa los distintos universos o realidades alternativas del multiverso DC, como Tierra-1 o Tierra-2.
+**Factura 🗺️:** Factura es la entidad que genera un comprobante de cada venta. Tiene un ID_Factura único y está relacionada con una venta específica (ID_Venta).
+
+**Devolución:** La entidad Devolución permite gestionar los productos que los clientes devuelven. Cada devolución tiene un ID_Devolución único, y está relacionada con una venta específica (ID_Venta) y un producto específico (ID_Producto). 
+
+
 
 ### Relaciones:
 
