@@ -48,13 +48,13 @@ Toxic Zone es una base de datos MySQL diseñada para gestionar y organizar el in
 
 ### Resúmen de Relaciones:
 
-- *Tienda* se relaciona con Personal, Inventario, y Venta.
-- *Producto* se relaciona con Categoría, Proveedor, Detalle_Venta, y Inventario.
-- *Venta* se relaciona con Tienda, Cliente, Personal, Detalle_Venta, Factura, y Devolución.
-- *Inventario* se relaciona con Tienda y Producto.
-- *Detalle_Venta* se relaciona con Venta y Producto.
-- *Factura* está relacionada directamente con Venta.
-- *Devolución* está relacionada con Venta y Producto.
+- ***Tienda*** se relaciona con Personal, Inventario, y Venta.
+- ***Producto*** se relaciona con Categoría, Proveedor, Detalle_Venta, y Inventario.
+- ***Venta*** se relaciona con Tienda, Cliente, Personal, Detalle_Venta, Factura, y Devolución.
+- ***Inventario*** se relaciona con Tienda y Producto.
+- ***Detalle_Venta*** se relaciona con Venta y Producto.
+- ***Factura*** está relacionada directamente con Venta.
+- ***Devolución*** está relacionada con Venta y Producto.
 
 
 ## Consultas 📑
