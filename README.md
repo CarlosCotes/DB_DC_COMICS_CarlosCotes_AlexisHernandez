@@ -16,35 +16,46 @@
 
 Toxic Zone es una base de datos MySQL diseñada para gestionar y organizar el inventario, las ventas y los datos de los clientes de una tienda de componentes electrónicos. Este proyecto ofrece una solución bien estructurada y escalable para manejar diversos aspectos de la operación de una tienda minorista, como el seguimiento de la disponibilidad de productos, la gestión de información de clientes y el procesamiento de pedidos.  
 
+## Diagrama E-R 
+
+
+
 ## Entidades_y_Relaciones 🌐
 
 ***Breve explicación de entidades y la relación entre cada una de ellas:***
 
-**Tienda 🥷:** Cada tienda tiene un ID_Tienda único que la identifica. Además, se guardan datos como el nombre, ubicación, teléfono, email y los horarios de apertura y cierre (Horario_Apertura, Horario_Cierre).
+**Tienda 🏦:** La entidad Tienda almacena la información básica de cada tienda física que forma parte del sistema. Cada tienda tiene un ID_Tienda único que la identifica. Además, se guardan datos como el nombre, ubicación, teléfono, email y los horarios de apertura y cierre (Horario_Apertura, Horario_Cierre).
 
-**Producto 📝:** Cada producto tiene un ID_Producto único. Además, se guardan el nombre, descripción, el precio y una Fecha_Añadido para conocer cuándo fue registrado en el sistema.
+**Producto 🖥️:** Producto representa los artículos que la tienda vende. Cada producto tiene un ID_Producto único. Además, se guardan el nombre, descripción, el precio y una Fecha_Añadido para conocer cuándo fue registrado en el sistema.
 
-**Categoría ✴️:** Cada categoría tiene un ID_Categoría único. Esta entidad permite organizar los productos de manera que sea más fácil buscarlos y clasificarlos.
+**Categoría 🖲️:** Categoría es la entidad que agrupa los productos bajo un nombre común y una descripción. Cada categoría tiene un ID_Categoría único. Esta entidad permite organizar los productos de manera que sea más fácil buscarlos y clasificarlos.
 
-**Proveedor 🦸🦹:** El Proveedor es la entidad que representa a las empresas o personas que suministran los productos a la tienda. Cada proveedor tiene un ID_Proveedor único, y la entidad almacena datos importantes como el nombre, teléfono, email y dirección.
+**Proveedor 👷‍♂️:** El proveedor es la entidad que representa a las empresas o personas que suministran los productos a la tienda. Cada proveedor tiene un ID_Proveedor único, y la entidad almacena datos importantes como el nombre, teléfono, email y dirección.
 
-**Personal 🌃:** La entidad Personal contiene información de los empleados que trabajan en una tienda. Cada miembro del personal tiene un ID_Personal único. Se almacenan datos personales como el nombre, apellido, teléfono, email, el cargo que ocupa, y la Fecha_Ingreso. 
+**Personal 👨‍💼:** La entidad personal contiene información de los empleados que trabajan en una tienda. Cada miembro del personal tiene un ID_Personal único. Se almacenan datos personales como el nombre, apellido, teléfono, email, el cargo que ocupa, y la Fecha_Ingreso. 
  
-**Cliente 📖:** La entidad Cliente almacena la información de las personas que compran en la tienda. Cada cliente tiene un ID_Cliente único, y se guarda información personal como nombre, apellido, teléfono, email y dirección.
+**Cliente 🧔:** La entidad cliente almacena la información de las personas que compran en la tienda. Cada cliente tiene un ID_Cliente único, y se guarda información personal como nombre, apellido, teléfono, email y dirección.
 
-**Venta :** La entidad Venta registra cada transacción que ocurre en la tienda. Cada venta tiene un ID_Venta único. Además, se registra la tienda en la que ocurrió la venta (ID_Tienda), el cliente que la realizó (ID_Cliente), y el empleado que gestionó la venta (ID_Personal). Se guarda la Fecha_Venta y el Total de la venta.
+**Venta 💵:** La entidad Venta registra cada transacción que ocurre en la tienda. Cada venta tiene un ID_Venta único. Además, se registra la tienda en la que ocurrió la venta (ID_Tienda), el cliente que la realizó (ID_Cliente), y el empleado que gestionó la venta (ID_Personal). Se guarda la Fecha_Venta y el Total de la venta.
 
-**Detalle_Venta 🌁:** La entidad Detalle_Venta desglosa los productos vendidos en cada venta. Cada detalle tiene un ID_Detalle_Venta único y está relacionado con una venta específica (ID_Venta) y un producto específico (ID_Producto).
+**Detalle_Venta 🗂️:** La entidad Detalle_Venta desglosa los productos vendidos en cada venta. Cada detalle tiene un ID_Detalle_Venta único y está relacionado con una venta específica (ID_Venta) y un producto específico (ID_Producto).
 
-**Inventario 📜:** La entidad Inventario almacena la cantidad disponible de cada producto en cada tienda. Cada registro en inventario tiene un ID_Inventario único, y está relacionado tanto con una tienda (ID_Tienda) como con un producto específico (ID_Producto).
+**Inventario 📑:** La entidad Inventario almacena la cantidad disponible de cada producto en cada tienda. Cada registro en inventario tiene un ID_Inventario único, y está relacionado tanto con una tienda (ID_Tienda) como con un producto específico (ID_Producto).
 
-**Factura 🗺️:** Factura es la entidad que genera un comprobante de cada venta. Tiene un ID_Factura único y está relacionada con una venta específica (ID_Venta).
+**Factura 📃:** Factura es la entidad que genera un comprobante de cada venta. Tiene un ID_Factura único y está relacionada con una venta específica (ID_Venta).
 
-**Devolución:** La entidad Devolución permite gestionar los productos que los clientes devuelven. Cada devolución tiene un ID_Devolución único, y está relacionada con una venta específica (ID_Venta) y un producto específico (ID_Producto). 
+**Devolución 🧾:** La entidad Devolución permite gestionar los productos que los clientes devuelven. Cada devolución tiene un ID_Devolución único, y está relacionada con una venta específica (ID_Venta) y un producto específico (ID_Producto). 
 
+### Resúmen de Relaciones:
 
+- *Tienda* se relaciona con Personal, Inventario, y Venta.
+- *Producto* se relaciona con Categoría, Proveedor, Detalle_Venta, y Inventario.
+- *Venta* se relaciona con Tienda, Cliente, Personal, Detalle_Venta, Factura, y Devolución.
+- *Inventario* se relaciona con Tienda y Producto.
+- *Detalle_Venta* se relaciona con Venta y Producto.
+- *Factura* está relacionada directamente con Venta.
+- *Devolución* está relacionada con Venta y Producto.
 
-### Relaciones:
 
 ## Consultas 📑
 
